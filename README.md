@@ -56,6 +56,8 @@
 
 ## About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/micro-parsers.svg)](https://greenkeeper.io/)
+
 The `buffer`, `text` and `json` body parsers extracted from [Micro](https://github.com/zeit/micro#body-parsing).
 
 

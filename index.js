@@ -31,10 +31,8 @@ exports.buffer = (req, { limit = '1mb', encoding } = {}) =>
       encoding = typer.parse(type).parameters.charset
     }
 
-    const body = rawBodyMap.get(req)
-
-    if (body) {
-      return body
+    if (rawBodyMap.has(req)) {
+      return rawBodyMap.get(req)
     }
 
     return getRawBody(req, { limit, length, encoding })
